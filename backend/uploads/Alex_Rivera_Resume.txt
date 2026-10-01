@@ -1,0 +1,14 @@
+Alex Rivera
+Senior Machine Learning Engineer
+Email: alex.rivera@example.com
+Location: San Francisco, CA
+
+SUMMARY
+Senior ML Engineer with 5 years experience building NLP transformers & RAG architectures.
+
+EXPERIENCE
+Google AI - Senior ML Engineer (2021 - Present)
+Engineered LLM fine-tuning pipelines in PyTorch.
+
+SKILLS
+Python, PyTorch, TensorFlow, NLP, LLMs, Transformers, Docker, AWS, SQL

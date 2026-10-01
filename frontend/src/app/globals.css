@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+:root {
+  --sand: #F4EBDD;
+  --beige: #E0CFB7;
+  --taupe: #BFA889;
+  --muted-teal: #2D8A8A;
+  --muted-teal-dark: #236E6E;
+  --muted-teal-subtle: #2D8A8A14;
+  --deep-ink: #1E2D2D;
+  --ink-secondary: #475858;
+  --ink-tertiary: #7D8F8F;
+  --surface-paper: #FAF6EE;
+  --surface-white: #FCF9F3;
+}
+
+@layer base {
+  * {
+    border-color: #E0CFB7;
+  }
+  body {
+    background-color: #F4EBDD;
+    color: #1E2D2D;
+    font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.01em;
+  }
+  h1, h2, h3 {
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Editorial Typography */
+.font-editorial {
+  font-family: var(--font-newsreader), "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.font-mono-code {
+  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* Editorial Surfaces & Borders */
+.paper-surface {
+  background-color: #FCF9F3;
+  border: 1px solid #E0CFB7;
+  border-radius: 4px;
+}
+
+.paper-surface-warm {
+  background-color: #FAF5EB;
+  border: 1px solid #E0CFB7;
+  border-radius: 4px;
+}
+
+.paper-card {
+  background-color: #FAF6EE;
+  border: 1px solid rgba(191, 168, 137, 0.45);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(30, 45, 45, 0.03);
+  transition: all 0.2s ease;
+}
+
+.paper-card:hover {
+  border-color: #2D8A8A;
+  box-shadow: 0 4px 12px rgba(30, 45, 45, 0.05);
+}
+
+/* Editorial Buttons */
+.btn-editorial-primary {
+  background-color: #2D8A8A;
+  color: #FAF6EE;
+  border: 1px solid #236E6E;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.btn-editorial-primary:hover {
+  background-color: #236E6E;
+  color: #FFFFFF;
+}
+
+.btn-editorial-secondary {
+  background-color: #FAF6EE;
+  color: #1E2D2D;
+  border: 1px solid #E0CFB7;
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.btn-editorial-secondary:hover {
+  background-color: #E0CFB7;
+  border-color: #BFA889;
+  color: #1E2D2D;
+}
+
+/* Editorial Badges */
+.badge-editorial-teal {
+  background-color: rgba(45, 138, 138, 0.12);
+  color: #1E2D2D;
+  border: 1px solid rgba(45, 138, 138, 0.35);
+  font-weight: 600;
+  border-radius: 2px;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.6875rem;
+}
+
+.badge-editorial-taupe {
+  background-color: rgba(191, 168, 137, 0.2);
+  color: #1E2D2D;
+  border: 1px solid rgba(191, 168, 137, 0.5);
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.6875rem;
+}
+
+/* Editorial Table */
+.editorial-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.editorial-table th {
+  border-bottom: 1px solid #BFA889;
+  padding: 0.625rem 1rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #475858;
+  text-align: left;
+}
+
+.editorial-table td {
+  border-bottom: 1px solid #E0CFB7;
+  padding: 0.75rem 1rem;
+  font-size: 0.8125rem;
+  color: #1E2D2D;
+}
+
+.editorial-table tr:hover td {
+  background-color: rgba(224, 207, 183, 0.2);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EBDD;
+}
+::-webkit-scrollbar-thumb {
+  background: #BFA889;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2D8A8A;
+}
